@@ -21,14 +21,14 @@
 ### Association
 - belongs_to :user
 
-## grouosテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|name|text|null: false|
 ### Association
-- belongs_to :group
 - has_many :groups_users
 - has_many  :users,  through:  :group_users
+- has_many :messages
 
 ## groups_usersテーブル
 |Column|Type|Options|
