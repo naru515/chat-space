@@ -1,13 +1,13 @@
 .side-bar
   .side-header
     .side-box
-      .side-box__user-name
+      %p.side-box__user-name
         naru
       %ul.icon-list
         %li.side__box__edit
           = link_to "#" do
-            = icon('fas', 'edit')
+            = icon('fas', 'edit', class: 'icon') 
         %li.side__box__new
           = link_to "#" do
-            = icon('fas', 'cog')
+            = icon('fas', 'cog', class: 'icon')
         
