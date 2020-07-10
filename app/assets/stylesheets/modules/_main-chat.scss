@@ -9,11 +9,38 @@
 
     .main-header {
       height: 100px;
-      width: 100%;
-      background-color: #ffffff;
-      border-bottom: solid 1px #eeeeee;
-    } 
+    padding: 0 40px;
+    border-bottom: solid 1px #eee;
+    display: flex;
+    justify-content: space-between;
+    }  
+      .main-header__group {
+        .main-header__groupname {
+          color: #333;
+          font-size: 20px;
+          margin-top: 35px;
+        }  
+        .member__list {
+          color: #999;
+          display: flex;
+          font-size: 12px;
+          margin-top: 15px;
 
+          .member__name {
+            padding-right: 5px;
+            margin: 0;
+            padding: 0;
+            font-size: 13px;
+        // .header__editbutton { 
+        //   display: block;
+        //   border: 1px solid #38AEF0;
+        //   color: #38AEF0;
+        //   height: 40px;
+        //   line-height: 40px;
+        //   margin-top: 28px;
+        //   padding: 0 20px;
+        //   text-decoration: none;   
+             
     .main-body {
       height: calc(100% - 190px);
       width: 100%;
@@ -24,6 +51,9 @@
       height: 90px;
       width: 100%;
       background-color: #d2d2d2;
+          }
+       }
     }
+   } 
   } 
 }
