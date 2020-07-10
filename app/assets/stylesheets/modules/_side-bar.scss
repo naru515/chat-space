@@ -27,6 +27,7 @@
       .icon-list {
         display: flex;
         justify-content: flex-end;
+      }  
       .icon {
         color: white;
       }  
@@ -34,8 +35,32 @@
         }  
         .side__box__new {
           margin-left: 5px;  
-        } 
+        }  
+    }   
+  }      
+  .grouplist {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+    overflow: scroll;
+
+    .group {
+      box-sizing: border-box;
+      padding: 20px 0 40px;
+      color: white;
+
+      .group__name {
+        font-size: 15px;
       }
-    }
+
+      .group__messages {
+        font-size: 11px;
+        margin-top: 5px;
+      }
+      .group__messages {
+        font-size: 11px;
+        margin-top: 5px;
+      }  
+    }     
   }  
 }
