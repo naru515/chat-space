@@ -35,9 +35,34 @@
   
   }   
   .main-body {
-    height: calc(100% - 190px);
-    width: 100%;
     background-color: #fafafa;
+    box-sizing: border-box;
+    padding: 35px 40px 0;
+    height: calc(100vh - 100px - 90px);
+    overflow: scroll;
+    .messagebox {
+      margin: 46px;
+      .message__info {
+        display: flex;
+        .message__info__username {
+          color: #434a54;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .message__info__date {
+          color: #999;
+          font-size: 12px;
+          padding-left: 10px;
+        }  
+      }
+      .message {
+        margin-top: 12px;
+        .message__content {    
+          color: #434a54;
+          font-size: 14px;
+        }
+      }
+    }
   }
   .main-footer {
     height: 90px;
