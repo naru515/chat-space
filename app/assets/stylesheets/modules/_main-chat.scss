@@ -1,59 +1,47 @@
-.wrapper {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-
-  .main-chat {
-    background-color: #fafafa;
-    width: calc(100vw - 300px);
-
-    .main-header {
-      height: 100px;
+.main-chat {
+  width: calc(100vw - 300px);
+  .main-header {
+    height: 100px;
     padding: 0 40px;
     border-bottom: solid 1px #eee;
     display: flex;
     justify-content: space-between;
+    .main-header__group {
+      .main-header__groupname {
+        color: #333;
+        font-size: 20px;
+        margin-top: 35px;
+      }  
+      .member__list {
+        color: #999;
+        display: flex;
+        font-size: 12px;
+        margin-top: 15px;
+      }  
     }  
-      .main-header__group {
-        .main-header__groupname {
-          color: #333;
-          font-size: 20px;
-          margin-top: 35px;
-        }  
-        .member__list {
-          color: #999;
-          display: flex;
-          font-size: 12px;
-          margin-top: 15px;
+    .header__edit__button { 
+      display: block;
+      border: 1px solid #38AEF0;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 28px;
+      padding: 0 20px;
 
-          .member__name {
-            padding-right: 5px;
-            margin: 0;
-            padding: 0;
-            font-size: 13px;
-        // .header__editbutton { 
-        //   display: block;
-        //   border: 1px solid #38AEF0;
-        //   color: #38AEF0;
-        //   height: 40px;
-        //   line-height: 40px;
-        //   margin-top: 28px;
-        //   padding: 0 20px;
-        //   text-decoration: none;   
-             
-    .main-body {
-      height: calc(100% - 190px);
-      width: 100%;
-      background-color: #fafafa;
+      a {
+        text-decoration: none;
+        color: #38AEF0;
+      }
     }
-
-    .main-footer {
-      height: 90px;
-      width: 100%;
-      background-color: #d2d2d2;
-          }
-       }
-    }
-   } 
+  
+  }   
+  .main-body {
+    height: calc(100% - 190px);
+    width: 100%;
+    background-color: #fafafa;
+  }
+  .main-footer {
+    height: 90px;
+    width: 100%;
+    background-color: #d2d2d2;
   } 
 }
