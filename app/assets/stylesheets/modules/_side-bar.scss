@@ -10,14 +10,14 @@
     display: flex;
     align-items: center;
 
-    .side-box {
+    .sidebox {
       background-color: #253141;
       height: 20px;
       width: 260px;
       display: flex;
       justify-content: space-between;
       
-      .side-box__user-name {
+      &__UserName {
         height: 20px;
         width: 160px;
         color: white;
@@ -49,15 +49,15 @@
       padding: 20px 0 40px;
       color: white;
 
-      .group__name {
+      &__name {
         font-size: 15px;
       }
 
-      .group__messages {
+      &__messages {
         font-size: 11px;
         margin-top: 5px;
       }
-      .group__messages {
+      &__messages {
         font-size: 11px;
         margin-top: 5px;
       }  
