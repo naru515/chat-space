@@ -1,0 +1,24 @@
+.side-bar
+  .side-header
+    .sidebox
+      %p.sidebox__UserName
+        naru
+      %ul.icon-list
+        %li.side__box__edit
+          = link_to "#" do
+            = icon('fas', 'edit', class: 'icon') 
+        %li.side__box__new
+          = link_to "#" do
+            = icon('fas', 'cog', class: 'icon')
+  .grouplist
+    .group
+      %p.group__name
+        teckcamp
+      %p.group__messages
+        まだメッセージはありません。  
+    .group
+      %p.group__name
+        teckcamp
+      %p.group__messages
+        まだメッセージはありません。
+        

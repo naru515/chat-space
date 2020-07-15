@@ -1,0 +1,37 @@
+.main-chat
+  .main-header
+    .main-header__group
+      %p.main-header__groupname
+        test
+      .member__list
+        Member : naru
+    .header__edit__button 
+      = link_to "#" do
+        Edit 
+  .messagefield
+    .messagebox
+      .message__info
+        .message__info--UserName
+          naru
+        .message__info--date  
+          2020年７月11日 22時20分
+      .message
+        .message__content
+          おはよう
+      .message__info
+        .message__info--UserName
+          naru
+        .message__info--date  
+          2020年７月12日 22時20分
+      .message
+        .message__content
+          こんばんは   
+  .footer        
+    %form.Form
+      .input-box
+        %input{type: "text",class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}    
+      
