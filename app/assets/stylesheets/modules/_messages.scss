@@ -58,22 +58,28 @@
       box-sizing: border-box;
       padding: 20px 0 40px;
       color: white;
+      a {
+        color: #fff;
+        text-decoration: none;
+       }
+        &__name {
+          font-size: 15px;
+        }
 
-      &__name {
-        font-size: 15px;
-      }
-
-      &__messages {
-        font-size: 11px;
-        margin-top: 5px;
-      }
-      &__messages {
-        font-size: 11px;
-        margin-top: 5px;
-      }  
+        &__messages {
+          font-size: 11px;
+          margin-top: 5px;
+        }
+        &__messages {
+          font-size: 11px;
+          margin-top: 5px;
+        }    
     }     
   }  
 }
+
+
+
 .main-chat {
   width: calc(100vw - 300px);
   .main-header {
