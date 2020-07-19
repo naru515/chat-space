@@ -9,6 +9,7 @@
       = link_to "#" do
         Edit 
   .messagefield
+    = render @messages
     .messagebox
       .message__info
         .message__info--UserName
@@ -26,12 +27,21 @@
       .message
         .message__content
           こんばんは   
-  .footer        
-    %form.Form
+  .Footer        
+    = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .input-box
-        %input{type: "text",class: "input-box__text", placeholder: "type a message"}
-        %label{class: "input-box__image"}
-          = icon('fas', 'image')
-          %input{type: "file", class: "input-box__image__file"}
-      %input{type: "submit", class: "submit-btn"}    
+        = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
+          = icon('far', 'image', class: 'Form__icon')
+          = f.file_field :image, class: 'input-box__image__file'
+      = f.submit 'Send', class: 'submit-btn'
+      
+  -# .footer        
+  -#   %form.Form
+  -#     .input-box
+  -#       %input{type: "text",class: "input-box__text", placeholder: "type a message"}
+  -#       %label{class: "input-box__image"}
+  -#         = icon('fas', 'image')
+  -#         %input{type: "file", class: "input-box__image__file"}
+  -#     %input{type: "submit", class: "submit-btn"}    
       
