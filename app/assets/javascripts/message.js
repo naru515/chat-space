@@ -7,15 +7,15 @@ $(function(){
             <div class="message__info--UserName">
               ${message.user_name}
             </div>
-            <div class="message__info--date>
+            <div class="message__info--date">
               ${message.created_at}
             </div>
           </div>
-          <div class="message>
+          <div class="message">
             <p class="message__content">
               ${message.content}
             </p>
-            <img class="Message__image" src="${Message__image}">
+            <img class="Message__image" src="${message.image}">
           </div>
         </div>`
       return html;
